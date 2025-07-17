@@ -2,27 +2,27 @@ const teamMembers = [
   {
     name: "Chhom Senghour",
     role: "Team leader",
-    imageSrc: "./images/profile/senghour.jpg",
+    imageSrc: "images/profile/senghour.jpg",
   },
   {
     name: "Rotha Sinath",
     role: "Team Member",
-    imageSrc: "./images/profile/sinath.jpg",
+    imageSrc: "images/profile/sinath.jpg",
   },
   {
     name: "Ly kimheng",
     role: "Team Member",
-    imageSrc: "./images/profile/kimheng.jpg",
+    imageSrc: "images/profile/kimheng.jpg",
   },
   {
     name: "Yong Vesal",
     role: "Team member",
-    imageSrc: "./images/profile/vesal.jpg",
+    imageSrc: "images/profile/vesal.jpg",
   },
   {
     name: "Our Menghuor",
     role: "Team member",
-    imageSrc: "./images/profile/menghour.jpg",
+    imageSrc: "images/profile/menghour.jpg",
   },
 ];
 
