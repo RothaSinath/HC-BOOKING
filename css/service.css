@@ -143,16 +143,12 @@ h1 {
   border-radius: 10px;
   margin-top: 50px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  font-weight: bold;
 }
 .see-more:hover{
-  background-color: #134655;
-}
-.i{
-  list-style: none;
-}
-.i a{
-  text-decoration: none;
-  color: white;
+  background-color: #529fb6;
 }
 .item-text{
   display: flex;
