@@ -1,46 +1,205 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-.navbar{
+.navbar {
+  width: 100%;
+  height: 60px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+.logo {
+  width: 50px;
+}
+nav {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+}
+.menu {
+  display: inline-block;
+  list-style-type: none;
+}
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: #555;
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: #32b550;
+}
+.active {
+  color: #32b550;
+}
+/* ================================================================================================================================ */
+.body-advice {
+  margin-top: 100px;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.advice {
+  width: 170vh;
+  height: auto;
+  background-color: whitesmoke;
+  display: flex;
+}
+.btn {
+  background-color: #1c3e53;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.infor-container {
+  width: 100%;
+  height: auto;
+  background-color: #141e32;
+}
+.container1 img {
+  width: 60px;
+  height: 40px;
+  padding-left: 20px;
+  /* padding-bottom: 10px; */
+  margin-top: 20px;
+}
+.icon {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 50px 40px;
+}
+.icon-text {
+  display: flex;
+  gap: 10px;
+}
+.container2 {
+  margin-top: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.container2 p {
+  text-align: center;
+  font-size: 26px;
+}
+.container-socail {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+}
+.infor-text {
+  display: flex;
+  gap: 5px;
+  list-style: none;
+}
+.infor-text a {
+  text-decoration: none;
+  color: white;
+}
+.infor-text li:not(:last-child)::after {
+  content: "|";
+  color: white;
+  margin-left: 10px;
+}
+.container3 {
+  width: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.text-aboutus {
+  text-align: right;
+  font-size: 26px;
+}
+.com-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.text {
+  background-color: whitesmoke;
+  margin-top: 10px;
+}
+.profile {
+  display: flex;
+  /* width: 10px; */
+  /* height: 20px; */
+  background-color: whitesmoke;
+  gap: 10px;
+}
+.img-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+}
+.text-p {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.down{
     width: 100%;
-    height: 60px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-.logo{
-    width: 50px;
-}
-nav{
-    flex: 1;
-    text-align: center;
-    font-weight: bold;
-}
-.menu{
-    display: inline-block;
-    list-style-type: none;
-}
-.menu li{
-    display: inline-block;
+    height: 1px;
+    background-color: black;
+    margin-top: 50px;
     margin-right: 20px;
 }
-a{
-    text-decoration: none;
-    color: #555;
-    transition: all 0.3s ease;
+.down-com{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    font-size: 16px;
 }
-a:hover{
-    color: #32B550;
+#icon{
+    font-size: 30px;
+    color: wheat;
+    margin-left: 50%;
 }
-.active{
-    color: #32B550;
+.comment{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
-
+.comment:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s;
+    background-color: lightgray;
+    border:solid 1px #1C3E53;
+    border-radius: 10px;
+}
 /* ================================================================================================================================================ */
 .footer {
   background-color: #134655;
