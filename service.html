@@ -30,6 +30,33 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="buttons">
+        <button class="login"><a href="login.html">Login</a></button>
+        <button class="cart" id="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-count" class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+    <div id="cart-modal" class="cart-modal" style="display: none">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <div>Total: $<span id="cart-total">0.00</span></div>
+      <button
+        id="buy-now"
+        style="
+          background: #32b550;
+          color: #fff;
+          border: none;
+          padding: 8px 24px;
+          border-radius: 20px;
+          margin: 10px 0 0 0;
+          cursor: pointer;
+        "
+      >
+        Buy Now
+      </button>
+      <button id="close-cart">Close</button>
     </div>
     <!-- Navbar -->
 
@@ -86,11 +113,11 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
+      <div class="footer-container">
         <!-- Left Section -->
-        <div class="left-section">
-          <img src="images/logo.png" alt="Logo" class="logo" />
-          <div class="contact-info">
+        <div class="footer-left">
+          <img src="images/logo.png" alt="Logo" class="footer-logo" />
+          <div class="footer-contact-info">
             <p><i class="fas fa-phone"></i> +855 123-456-789</p>
             <p><i class="fas fa-envelope"></i> Healthcarebooking@service.com</p>
             <p><i class="fas fa-map-marker-alt"></i> Location</p>
@@ -98,23 +125,22 @@
         </div>
 
         <!-- Center Section -->
-        <div class="center-section">
+        <div class="footer-center">
           <h2>Social Media</h2>
-          <div class="social-icons">
+          <div class="footer-social-icons">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fa-brands fa-telegram"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-x-twitter"></i></a>
           </div>
-          <nav class="nav-links">
-            <a href="#">Home </a>| <a href="#"> About </a>|
-            <a href="#"> Service </a>| <a href="#"> Activity </a>|
-            <a href="#"> Article </a>| <a href="#"> Content </a>|
+          <nav class="footer-nav-links">
+            <a href="#">Home </a>| <a href="#"> About </a>| <a href="#"> Service </a>|
+            <a href="#"> Activity </a>| <a href="#"> Article </a>| <a href="#"> Contact </a>|
           </nav>
         </div>
 
         <!-- Right Section -->
-        <div class="right-section">
+        <div class="footer-right">
           <h3>About Us</h3>
           <p>
             We believe that healthcare is more than just treatment—it's about
@@ -125,16 +151,17 @@
       </div>
 
       <!-- Bottom Section -->
-      <div class="bottom-section">
-        <div class="links">
+      <div class="footer-bottom-section">
+        <div class="footer-links">
           <a href="#">Terms & Conditions</a>
           <a href="#">Privacy Policy</a>
         </div>
-        <div class="copyright">
+        <div class="footer-copyright">
           <p>Copyright All rights reserved.</p>
         </div>
       </div>
     </footer>
     <!-- Footer -->
   </body>
+  <script src="javascript/shop.js"></script>
 </html>

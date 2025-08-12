@@ -12,7 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <title>HCBOOKING</title>
-    <link rel="icon" href="images/logo.png">
+    <link rel="icon" href="images/logo.png" />
   </head>
   <body>
     <!-- Navbar -->
@@ -30,60 +30,87 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="buttons">
+        <button class="login"><a href="login.html">Login</a></button>
+        <button class="cart" id="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-count" class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+    <div id="cart-modal" class="cart-modal" style="display: none">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <div>Total: $<span id="cart-total">0.00</span></div>
+      <button
+        id="buy-now"
+        style="
+          background: #32b550;
+          color: #fff;
+          border: none;
+          padding: 8px 24px;
+          border-radius: 20px;
+          margin: 10px 0 0 0;
+          cursor: pointer;
+        "
+      >
+        Buy Now
+      </button>
+      <button id="close-cart">Close</button>
     </div>
     <!-- Navbar -->
 
     <!-- Banner -->
     <div class="banner">
       <h2>HCBOOKING -Your Healthcare Partner</h2>
-      <button type="button"><a href="about.html" style="color: white;">
-        Learn More About Us
-      </a></button>
+      <button type="button">
+        <a href="about.html" style="color: white"> Learn More About Us </a>
+      </button>
     </div>
     <!-- Banner-->
 
     <!-- Content -->
-     <div class="content-container">
-       <h2>Why healthcare is important?</h2>
-       <div class="content">
-         <div class="vision">
-           <h3>
-             Healthcare is important because it can help people avoid dangerous
-             diseases, malnutrition, and pregnancy. And you can find the hospital
-             that is good at your disease.
-           </h3>
-           <p class="parUp">
-             They can improve the day-to-day lives of patients, helping them in
-             their final years or giving a younger patient an easier start in life.
-             The goals of public health are to prevent disease outbreaks and
-             minimize the spread, to protect against environmental hazards and
-             threats, and to find a hospital that is good for you.  Involving
-             communities in healthcare decisions, fostering health literacy, and
-             advocating for policies that promote population health and equity.
-           </p>
-           <div class="box">
-             <p>
-               CARE works around the globe to save lives, defeat poverty, and
-               achieve social justice. We seek a world of hope, inclusion, and
-               social
-             </p>
-           </div>
-           <p class="parDown">
-             We can give you some information about the hospital and know more
-             about that hospital, good at what? And we can know how much we can
-             prepare money for treatment.
-           </p>
-         </div>
-         <div class="vision-image">
-           <div class="imageUp">
-             <img src="./images/content1.png" alt="" />
-           </div>
-           <div class="imageDown">
-             <img src="images/content2.jpg" alt="" />
-           </div>
-         </div>
-       </div>
-     </div>
+    <div class="content-container">
+      <h2>Why healthcare is important?</h2>
+      <div class="content">
+        <div class="vision">
+          <h3>
+            Healthcare is important because it can help people avoid dangerous
+            diseases, malnutrition, and pregnancy. And you can find the hospital
+            that is good at your disease.
+          </h3>
+          <p class="parUp">
+            They can improve the day-to-day lives of patients, helping them in
+            their final years or giving a younger patient an easier start in
+            life. The goals of public health are to prevent disease outbreaks
+            and minimize the spread, to protect against environmental hazards
+            and threats, and to find a hospital that is good for you.  Involving
+            communities in healthcare decisions, fostering health literacy, and
+            advocating for policies that promote population health and equity.
+          </p>
+          <div class="box">
+            <p>
+              CARE works around the globe to save lives, defeat poverty, and
+              achieve social justice. We seek a world of hope, inclusion, and
+              social
+            </p>
+          </div>
+          <p class="parDown">
+            We can give you some information about the hospital and know more
+            about that hospital, good at what? And we can know how much we can
+            prepare money for treatment.
+          </p>
+        </div>
+        <div class="vision-image">
+          <div class="imageUp">
+            <img src="./images/content1.png" alt="" />
+          </div>
+          <div class="imageDown">
+            <img src="images/content2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Content -->
 
     <!-- Arrow -->
@@ -141,7 +168,7 @@
           </div>
         </div>
         <button type="button">
-          <a href="service.html" style="color: white;">Explore Our Services</a>
+          <a href="service.html" style="color: white">Explore Our Services</a>
         </button>
       </div>
     </div>
@@ -210,4 +237,5 @@
     <!-- Footer -->
   </body>
   <script src="profileMember.js"></script>
+  <script src="javascript/shop.js"></script>
 </html>

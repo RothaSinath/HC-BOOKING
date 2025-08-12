@@ -25,6 +25,33 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="buttons">
+        <button class="login"><a href="login.html">Login</a></button>
+        <button class="cart" id="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-count" class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+    <div id="cart-modal" class="cart-modal" style="display: none">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <div>Total: $<span id="cart-total">0.00</span></div>
+      <button
+        id="buy-now"
+        style="
+          background: #32b550;
+          color: #fff;
+          border: none;
+          padding: 8px 24px;
+          border-radius: 20px;
+          margin: 10px 0 0 0;
+          cursor: pointer;
+        "
+      >
+        Buy Now
+      </button>
+      <button id="close-cart">Close</button>
     </div>
     <!-- Navbar -->
 
@@ -213,4 +240,5 @@
     </footer>
     <!-- Footer -->
 </body>
+<script src="javascript/shop.js"></script>
 </html>

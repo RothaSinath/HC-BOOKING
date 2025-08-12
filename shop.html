@@ -6,15 +6,20 @@
     <!-- link css -->
     <link rel="stylesheet" href="css/shop.css" />
     <!-- link font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>HCBOOKING</title>
-    <link rel="icon" href="images/logo.png">
+    <link rel="icon" href="images/logo.png" />
   </head>
   <body>
     <!-- Navbar -->
     <div class="navbar">
       <div class="logo">
-        <img src="images/logo.png" alt="" />
+        <img src="images/logo.png" alt="HCBOOKING Logo" />
       </div>
       <nav>
         <ul class="menu">
@@ -26,15 +31,266 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="buttons">
+        <button class="login"><a href="login.html">Login</a></button>
+        <button class="cart" id="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-count" class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+    <div id="cart-modal" class="cart-modal" style="display: none">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <div>Total: $<span id="cart-total">0.00</span></div>
+      <button
+        id="buy-now"
+        style="
+          background: #32b550;
+          color: #fff;
+          border: none;
+          padding: 8px 24px;
+          border-radius: 20px;
+          margin: 10px 0 0 0;
+          cursor: pointer;
+        "
+      >
+        Buy Now
+      </button>
+      <button id="close-cart">Close</button>
     </div>
     <!-- Navbar -->
 
-    
-    <!-- List Product -->
-     <div class="">
-        <div class="">
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Your trusted care now and always</h1>
+          <p>A short description to introduce your brand and its mission.</p>
+          <a href="#" class="shop-btn">Shop Now</a>
         </div>
-     </div>
+        <div class="hero-image">
+          <img
+            src="images/hero_shop.jpg"
+            alt="Hero image of health products"
+          />
+        </div>
+      </section>
+
+      <!-- Shop by Category Section -->
+      <section class="category-section">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+          <a href="#" class="category-card">
+            <div class="category-icon" aria-label="Health Products">
+              <i class="fa-solid fa-box"></i>
+            </div>
+            <span>Health Products</span>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-icon" aria-label="Medications">
+              <i class="fa-solid fa-pills"></i>
+            </div>
+            <span>Medications</span>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-icon" aria-label="First Aid">
+              <i class="fa-solid fa-first-aid"></i>
+            </div>
+            <span>First Aid</span>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-icon" aria-label="Vitamins">
+              <i class="fa-solid fa-bottle-droplet"></i>
+            </div>
+            <span>Vitamins</span>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-icon" aria-label="Pain Relievers">
+              <i class="fa-solid fa-band-aid"></i>
+            </div>
+            <span>Pain Relievers</span>
+          </a>
+          <a href="#" class="category-card">
+            <div class="category-icon" aria-label="Kids Care">
+              <i class="fa-solid fa-baby"></i>
+            </div>
+            <span>Kids Care</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Best Seller Section -->
+      <section class="bestseller-section">
+        <h2>Best Seller</h2>
+        <div class="bestseller-grid">
+          <div class="product-card">
+            <img
+              src="images/products/product1.jpg"
+              alt="Best Seller 1"
+            />
+            <h3>Best Seller Product</h3>
+            <p>A short product description.</p>
+            <div class="product-footer">
+              <span>$12.99</span>
+              <a
+                href="#"
+                class="add-cart-btn"
+                data-name="Best Seller Product 1"
+                data-price="12.99"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="images/products/product2.jpg"
+              alt="Best Seller 2"
+            />
+            <h3>Best Seller Product</h3>
+            <p>A short product description.</p>
+            <div class="product-footer">
+              <span>$21.99</span>
+              <a
+                href="#"
+                class="add-cart-btn"
+                data-name="Best Seller Product 2"
+                data-price="21.99"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="images/products/product3.jpg"
+              alt="Best Seller 3"
+            />
+            <h3>Best Seller Product</h3>
+            <p>A short product description.</p>
+            <div class="product-footer">
+              <span>$8.99</span>
+              <a
+                href="#"
+                class="add-cart-btn"
+                data-name="Best Seller Product 3"
+                data-price="8.99"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="images/products/product4.jpg"
+              alt="Best Seller 4"
+            />
+            <h3>Best Seller Product</h3>
+            <p>A short product description.</p>
+            <div class="product-footer">
+              <span>$17.99</span>
+              <a
+                href="#"
+                class="add-cart-btn"
+                data-name="Best Seller Product 4"
+                data-price="17.99"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Explore Our Store Collection Section -->
+      <section class="collection-section">
+        <h2>Explore Our Store Collection</h2>
+        <div class="collection-grid">
+          <div class="collection-card">
+            <img
+              src="images/items/item1.jpg"
+              alt="Collection Item 1"
+            />
+            <span>Collection Item 1</span>
+          </div>
+          <div class="collection-card">
+            <img
+            src="images/items/item2.jpg"
+              alt="Collection Item 2"
+            />
+            <span>Collection Item 2</span>
+          </div>
+          <div class="collection-card">
+            <img
+              src="images/items/item3.jpg"
+              alt="Collection Item 3"
+            />
+            <span>Collection Item 3</span>
+          </div>
+          <div class="collection-card">
+            <img
+              src="images/items/item4.jpg"
+              alt="Collection Item 4"
+            />
+            <span>Collection Item 4</span>
+          </div>
+          <div class="collection-card">
+            <img
+              src="images/items/item5.jpg"
+              alt="Collection Item 5"
+              style="object-fit: cover; height: 180px;"
+            />
+            <span>Collection Item 5</span>
+          </div>
+          <div class="collection-card">
+            <img
+              src="images/items/item6.jpg"
+              alt="Collection Item 6"
+            />
+            <span>Collection Item 6</span>
+          </div>
+          <div class="collection-card">
+            <img
+              src="images/items/item7.png"
+              alt="Collection Item 7"
+            />
+            <span>Collection Item 7</span>
+          </div>
+          <div class="collection-card">
+            <img
+              src="images/items/item8.png"
+              alt="Collection Item 8"
+            />
+            <span>Collection Item 8</span>
+          </div>
+          <div class="collection-card">
+            <img
+              src="images/items/item9.jpg"
+              alt="Collection Item 9"
+            />
+            <span>Collection Item 9</span>
+          </div>
+          <div class="collection-card">
+            <img
+              src="images/items/item10.jpg"
+              alt="Collection Item 10"
+            />
+            <span>Collection Item 10</span>
+          </div>
+          <div class="collection-card">
+            <img
+              src="images/items/item11.jpg"
+              alt="Collection Item 11"
+            />
+            <span>Collection Item 11</span>
+          </div>
+          <div class="collection-card">
+            <img
+              src="images/items/item12.jpg"
+              alt="Collection Item 12"
+            />
+            <span>Collection Item 12</span>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -53,15 +309,24 @@
         <div class="center-section">
           <h2>Social Media</h2>
           <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-telegram"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Telegram"
+              ><i class="fa-brands fa-telegram"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="X (Twitter)"
+              ><i class="fab fa-x-twitter"></i
+            ></a>
           </div>
           <nav class="nav-links">
-            <a href="#">Home </a>| <a href="#"> About </a>|
-            <a href="#"> Service </a>| <a href="#"> Activity </a>|
-            <a href="#"> Article </a>| <a href="#"> Content </a>|
+            <a href="#">Home</a> | <a href="#">About</a> |
+            <a href="#">Service</a> | <a href="#">Activity</a> |
+            <a href="#">Article</a> |
+            <a href="#">Contact</a>
           </nav>
         </div>
 
@@ -89,4 +354,5 @@
     </footer>
     <!-- Footer -->
   </body>
+  <script src="javascript/shop.js"></script>
 </html>
